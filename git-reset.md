@@ -1,10 +1,3 @@
-- Delete Branch
-```bash
-git push -d origin <branchname>   # Delete remote
-git branch -d <branchname>        # Delete local
-```
-
-- Revert to a previous commit
 ```bash
 # staging vs change vs discard
 git reset --soft HEAD~1

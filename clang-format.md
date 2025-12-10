@@ -6,7 +6,6 @@ clang-format -style=microsoft -dump-config > .clang-format
 ```bash
 ---
 Language: Cpp
-Standard: Cpp23
 BasedOnStyle: Microsoft
 
 # === Indentation & Alignment ===
@@ -60,7 +59,6 @@ FixNamespaceComments: true
 NamespaceIndentation: None
 ReflowComments: true
 ---
-
 
 ```
 
