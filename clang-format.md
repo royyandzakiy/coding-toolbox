@@ -21,11 +21,11 @@ AlignTrailingComments: true
 # === Braces & Blocks ===
 BreakBeforeBraces: Attach # void func() {
 BraceWrapping:
-  AfterFunction: true
-  AfterClass: true
-  AfterStruct: true
-  AfterNamespace: true
-  BeforeElse: true
+  AfterFunction: false
+  AfterClass: false
+  AfterStruct: false
+  AfterNamespace: false
+  BeforeElse: false
   BeforeCatch: true
 
 # === Line & Spacing ===
@@ -35,11 +35,17 @@ SpaceBeforeParensOptions:
   AfterControlStatements: true
   AfterFunctionDefinitionName: false
   AfterFunctionDeclarationName: false
-PointerAlignment: Right
+PointerAlignment: Left
 SpaceAfterTemplateKeyword: true
 SpacesInContainerLiterals: true
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
+
+# === Contstructors ===
+AlwaysBreakTemplateDeclarations: Yes
+ConstructorInitializerIndentWidth: 4
+PackConstructorInitializers: Never # Forces each member to its own line
+ConstructorInitializerAllOnOneLineOrNextLine: false
 
 # === Statements & Formatting Rules ===
 AllowShortFunctionsOnASingleLine: None
@@ -58,6 +64,10 @@ IncludeBlocks: Preserve
 FixNamespaceComments: true
 NamespaceIndentation: None
 ReflowComments: true
+
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeTernaryOperators: true
 ---
 
 ```

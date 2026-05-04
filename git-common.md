@@ -4,6 +4,13 @@ git push -d origin <branchname>   # Delete remote
 git branch -d <branchname>        # Delete local
 ```
 
+- Rename Branch
+```bash
+git branch -m <new_branchname> # current branch
+# or
+git branch -m <old_branchname> <new_branchname>
+```
+
 - Revert to a previous commit
 ```bash
 # staging vs change vs discard
