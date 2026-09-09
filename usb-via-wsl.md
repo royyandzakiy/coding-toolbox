@@ -1,8 +1,13 @@
 ```bash
 # in windows
+wsl -d Ubuntu-26.04 -- sudo modprobe cdc_acm # One-time per WSL session, before attaching the probe
+
 usbipd list
-usbipd attach --wsl --busid 5-3 # will remove device from windows
-usbipd detach --busid 5-3
+usbipd bind --busid 1-5             # need to be done once, as admin
+
+usbipd attach --wsl --busid 5-3     # will remove device from windows
+
+usbipd detach --busid 5-3           # after done working in wsl
 
 # in linux
 lsusb
